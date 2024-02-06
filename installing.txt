@@ -15,3 +15,8 @@ export function handleSummary(data) {
     stdout: textSummary(data, { indent: " ", enableColors: true })
   };
 }
+
+==reference==
+- https://k6.io/docs/get-started/installation/#troubleshooting
+- https://github.com/grafana/k6-learn/tree/main/Modules/II-k6-Foundations
+- https://anivaz.medium.com/getting-started-with-k6-a-beginners-guide-to-load-testing-1249c64118b6

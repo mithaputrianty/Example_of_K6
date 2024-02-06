@@ -9,6 +9,10 @@ export let options = {
         { duration: '1m', target: 5 }, // simulate ramp-up of traffic from 0 to 5 users over 1 minute
         { duration: '1m30s', target: 5}, // stay at 5 users for 1minutes 30 seconds
     ],
+    thresholds: {
+        http_req_duration: ['p(90)<500'], // 90% of requests must complete within 500ms
+        http_req_failed: ['rate<0.2'] // request failure rate must be below 20%
+      },    
 };
 
 export default function () {
